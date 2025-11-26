@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/TomYang1993/dictionary-web-app-AI)
+- Live Site URL: [Vercel site](https://dictionary-web-app-ai.vercel.app/)
 
 ## My process
 
@@ -75,5 +75,10 @@ if (!word.trim()) {
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@TomYang1993](https://www.frontendmentor.io/profile/TomYang1993)
+
+
+## Note
+
+- needs to deploy it
+- experimented with antigravity
