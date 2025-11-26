@@ -1,0 +1,134 @@
+/* Local Fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/assets/fonts/lora/Lora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/assets/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+  --color-black: #050505;
+  --color-dark-grey: #1F1F1F;
+  --color-mid-grey: #2D2D2D;
+  --color-light-grey: #3A3A3A;
+  --color-grey: #757575;
+  --color-line-grey: #E9E9E9;
+  --color-white-smoke: #F4F4F4;
+  --color-white: #FFFFFF;
+  --color-purple: #A445ED;
+  --color-red: #FF5252;
+
+  /* Fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Lora', serif;
+  --font-mono: 'Inconsolata', monospace;
+}
+
+/* Dark Mode Overrides */
+.dark {
+  --bg-color: var(--color-black);
+  --text-color: var(--color-white);
+  --input-bg: var(--color-dark-grey);
+  --dropdown-bg: var(--color-dark-grey);
+  --shadow-color: #A445ED;
+  --color-line-grey: #3A3A3A;
+}
+
+/* Light Mode (Default) */
+body {
+  --bg-color: var(--color-white);
+  --text-color: var(--color-mid-grey);
+  --input-bg: var(--color-white-smoke);
+  --dropdown-bg: var(--color-white);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 736px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Typography Utilities */
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-grey);
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Font Classes */
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Common Utilities */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
