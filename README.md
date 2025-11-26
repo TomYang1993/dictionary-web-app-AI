@@ -79,6 +79,4 @@ if (!word.trim()) {
 
 
 ## Note
-
-- needs to deploy it
 - experimented with antigravity
